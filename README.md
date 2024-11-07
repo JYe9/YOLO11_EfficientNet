@@ -14,7 +14,7 @@ This project is a modified version of [YOLOv11](https://github.com/ultralytics/u
 2. Install dependencies:
 
     ```bash
-    pip install -r requirements.txt
+    pip install ultralytics
     ```
 
 ## Modifications
@@ -49,7 +49,17 @@ The new file `yolo11_EfficientNet.yaml` in `/ultralytics/ultralytics/cfg/models/
 2. Run the training script:
 
     ```bash
-    python train.py --cfg /path/to/yolo11_EfficientNet.yaml
+    python train.py 
+    ```
+3. Run the detection script:
+
+    ```bash
+    python detect.py 
+    ```
+4. Run the validation script:
+
+    ```bash
+    python val.py 
     ```
 
 This command will initiate training on the modified YOLOv11 model with the EfficientNet backbone.
